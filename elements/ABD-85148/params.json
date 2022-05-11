@@ -1,0 +1,444 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "Spark Line Chart ",
+    "events": {
+        "AAC": {
+            "caption": "is clicked on",
+            "doc": "Trigger event for clicking on the chart",
+            "name": "chart_clicked"
+        }
+    },
+    "fields": {
+        "AAD": {
+            "caption": "Series Data #1",
+            "doc": "Values for the y-axis (as a list of numbers)",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "series_data_1",
+            "rank": 9,
+            "value": "number"
+        },
+        "AAE": {
+            "caption": "Series Categories",
+            "doc": "Values for the x-axis (as a list of texts). Use the ':formatted as' operator to convert datatypes to text.",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "categories",
+            "rank": 7,
+            "value": "text"
+        },
+        "AAF": {
+            "caption": "Series Name #1",
+            "default_val": "Series",
+            "doc": "Name of series",
+            "editor": "DynamicValue",
+            "name": "series_name_1",
+            "optional": false,
+            "rank": 8,
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "Stroke Curve",
+            "default_val": "smooth",
+            "doc": "In line / area charts, whether to draw smooth lines or straight lines. Available Options:  smooth: connects the points in a curve fashion. Also known as spline straight: connect the points in straight lines. stepline: points are connected by horizontal and vertical line segments, looking like steps of a staircase.",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "curve",
+            "optional": true,
+            "options": "straight,smooth,stepline",
+            "rank": 27
+        },
+        "AAH": {
+            "caption": "Stroke Line Cap",
+            "doc": "For setting the starting and ending points of stroke Available Options  butt: ends the stroke with a 90-degree angle square: similar to butt except that it extends the stroke beyond the length of the path round: ends the path-stroke with a radius that smooths out the start and end points",
+            "editor": "Dropdown",
+            "name": "lineCap",
+            "optional": true,
+            "options": "butt,square,round",
+            "rank": 28
+        },
+        "AAI": {
+            "caption": "Stroke Width",
+            "default_val": 5,
+            "doc": "Sets the width of border for svg path",
+            "editor": "DynamicValue",
+            "name": "width",
+            "optional": true,
+            "rank": 29,
+            "value": "number"
+        },
+        "AAJ": {
+            "caption": "Title",
+            "default_val": "ApexChart",
+            "doc": "The title of the chart",
+            "editor": "DynamicValue",
+            "name": "title",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "AAK": {
+            "caption": "Title Alignment",
+            "default_val": "left",
+            "doc": "Where to align the title and subtitle",
+            "editor": "Dropdown",
+            "name": "align",
+            "optional": true,
+            "options": "left,right",
+            "rank": 3
+        },
+        "AAL": {
+            "caption": "Series Name #2",
+            "default_val": "(optional)",
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "series_name_2",
+            "optional": true,
+            "rank": 11,
+            "value": "text"
+        },
+        "AAM": {
+            "caption": "Series Data #2",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "series_data_2",
+            "optional": true,
+            "rank": 12,
+            "value": "number"
+        },
+        "AAN": {
+            "caption": "Series Name #3",
+            "default_val": "(optional)",
+            "editor": "DynamicValue",
+            "name": "series_name_3",
+            "optional": true,
+            "rank": 14,
+            "value": "text"
+        },
+        "AAO": {
+            "caption": "Series Data #3",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "series_data_3",
+            "optional": true,
+            "rank": 15,
+            "value": "number"
+        },
+        "AAP": {
+            "caption": "Series Name #4",
+            "default_val": "(optional)",
+            "editor": "DynamicValue",
+            "name": "series_name_4",
+            "optional": true,
+            "rank": 17,
+            "value": "text"
+        },
+        "AAQ": {
+            "caption": "Series Data #4",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "series_data_4",
+            "optional": true,
+            "rank": 18,
+            "value": "number"
+        },
+        "AAR": {
+            "caption": "Series Name #5",
+            "default_val": "(optional)",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "long_text": false,
+            "name": "series_name_5",
+            "optional": true,
+            "rank": 20,
+            "value": "text"
+        },
+        "AAS": {
+            "caption": "Series Data #5",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "series_data_5",
+            "optional": true,
+            "rank": 21,
+            "value": "number"
+        },
+        "AAT": {
+            "caption": "Enable Zoom",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "enable_zoom",
+            "rank": 31
+        },
+        "AAU": {
+            "caption": "Chart Color",
+            "default_val": "rgba(246, 248, 250, 1)",
+            "editor": "Color",
+            "name": "chart_color",
+            "optional": true,
+            "rank": 25
+        },
+        "AAV": {
+            "caption": "Enable Toolbar",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "enable_toolbar",
+            "rank": 32
+        },
+        "AAW": {
+            "caption": "Enable Data Labels",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "enable_dataLabels",
+            "rank": 33
+        },
+        "AAX": {
+            "caption": "Enable Grid",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "enable_grid",
+            "rank": 40
+        },
+        "AAY": {
+            "caption": "Grid Row Color",
+            "doc": "Fill every other row with a color",
+            "editor": "Color",
+            "name": "grid_row_color",
+            "optional": true,
+            "rank": 41
+        },
+        "AAZ": {
+            "caption": "Grid Row Opacity",
+            "default_val": 0.5,
+            "doc": "0 - 1",
+            "editor": "StaticNumber",
+            "name": "grid_row_opacity",
+            "optional": true,
+            "rank": 42
+        },
+        "AAa": {
+            "caption": "Grid Column Color",
+            "doc": "Fill every other column with a color",
+            "editor": "Color",
+            "name": "grid_column_color",
+            "optional": true,
+            "rank": 43
+        },
+        "AAb": {
+            "caption": "Grid Column Opacity",
+            "default_val": 0.5,
+            "doc": "0 - 1",
+            "editor": "StaticNumber",
+            "name": "grid_column_opacity",
+            "optional": true,
+            "rank": 44
+        },
+        "AAc": {
+            "caption": "Series Color #1",
+            "default_val": "rgba(119, 182, 234, 1)",
+            "editor": "Color",
+            "name": "series_color_1",
+            "rank": 10
+        },
+        "AAd": {
+            "caption": "Chart Type",
+            "default_val": "area",
+            "editor": "Dropdown",
+            "name": "chart_type",
+            "options": "line,area",
+            "rank": 24
+        },
+        "AAe": {
+            "caption": "Enable Animation",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "enable_animation",
+            "rank": 34
+        },
+        "AAf": {
+            "caption": "Series Color #2",
+            "editor": "Color",
+            "name": "series_color_2",
+            "optional": true,
+            "rank": 13
+        },
+        "AAg": {
+            "caption": "Series Color #3",
+            "editor": "Color",
+            "name": "series_color_3",
+            "optional": true,
+            "rank": 16
+        },
+        "AAh": {
+            "caption": "Series Color #4",
+            "editor": "Color",
+            "name": "series_color_4",
+            "optional": true,
+            "rank": 19
+        },
+        "AAi": {
+            "caption": "Series Color #5",
+            "editor": "Color",
+            "name": "series_color_5",
+            "optional": true,
+            "rank": 22
+        },
+        "AAj": {
+            "caption": "Subtitle",
+            "editor": "DynamicValue",
+            "name": "subtitle",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AAk": {
+            "caption": "Show Tooltip",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "show_tooltip",
+            "rank": 46
+        },
+        "AAl": {
+            "caption": "Show x-axis Tooltip",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "show_xaxis_tooltip",
+            "rank": 47
+        },
+        "AAm": {
+            "caption": "Enable Legend",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "enable_legend",
+            "rank": 49
+        },
+        "AAn": {
+            "caption": "Legend Position",
+            "default_val": "top",
+            "editor": "Dropdown",
+            "name": "legend_position",
+            "optional": true,
+            "options": "top,bottom",
+            "rank": 50
+        },
+        "AAo": {
+            "caption": "Legend Alignment",
+            "default_val": "right",
+            "editor": "Dropdown",
+            "name": "legend_alignment",
+            "optional": true,
+            "options": "left,right,center",
+            "rank": 51
+        },
+        "AAp": {
+            "caption": "Categories Title",
+            "editor": "DynamicValue",
+            "name": "categories_title",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "AAq": {
+            "caption": "Series Title",
+            "editor": "DynamicValue",
+            "name": "series_title",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "AAr": {
+            "caption": "----------------------- Titles and Subtitles -----------------------",
+            "editor": "Label",
+            "name": "-------------------------_titles_and_subtitles_-------------------------",
+            "rank": 0
+        },
+        "AAs": {
+            "caption": "----------------------------- Data Points ------------------------------",
+            "editor": "Label",
+            "name": "-----------------------_data_points_-----------------------",
+            "rank": 6
+        },
+        "AAt": {
+            "caption": "----------------------------- Chart Styles -----------------------------",
+            "editor": "Label",
+            "name": "------------------------------_chart_styles_------------------------------",
+            "rank": 23
+        },
+        "AAu": {
+            "caption": "--------------------------- Legend Options --------------------------",
+            "editor": "Label",
+            "name": "------------------------------_legend_------------------------------",
+            "rank": 48
+        },
+        "AAv": {
+            "caption": "-------------------------- Tooltip Options ---------------------------",
+            "editor": "Label",
+            "name": "------------------------------_tooltip_options_------------------------------",
+            "rank": 45
+        },
+        "AAw": {
+            "caption": "---------------------------- Grid Options ----------------------------",
+            "editor": "Label",
+            "name": "------------------------------_grid_options_------------------------------",
+            "rank": 39
+        },
+        "AAx": {
+            "caption": "------------------------- Stroke Styles -------------------------",
+            "editor": "Label",
+            "name": "------------------------------_stroke_styles_------------------------------",
+            "rank": 26
+        },
+        "AAy": {
+            "caption": "-------------------------- Display Options ---------------------------",
+            "editor": "Label",
+            "name": "------------------------------_display_options_------------------------------",
+            "rank": 30
+        },
+        "AAz": {
+            "caption": "yMax",
+            "doc": "Highest number to be set for the y-axis.",
+            "editor": "DynamicValue",
+            "name": "yMax",
+            "optional": true,
+            "rank": 35,
+            "value": "number"
+        },
+        "ABA": {
+            "caption": "yMin",
+            "doc": "Lowest number to be set for the y-axis.",
+            "editor": "DynamicValue",
+            "name": "yMin",
+            "optional": true,
+            "rank": 36,
+            "value": "number"
+        },
+        "ABB": {
+            "caption": "xMax",
+            "doc": "Highest number to be set for the x-axis.",
+            "editor": "DynamicValue",
+            "name": "xMax",
+            "optional": true,
+            "rank": 37,
+            "value": "number"
+        },
+        "ABC": {
+            "caption": "xMin",
+            "doc": "Lowest number to be set for the x-axis.",
+            "editor": "DynamicValue",
+            "name": "xMin",
+            "optional": true,
+            "rank": 38,
+            "value": "number"
+        }
+    },
+    "icon": "ion-stats-bars",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "support_autobinding": false
+}
