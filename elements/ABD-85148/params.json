@@ -433,6 +433,14 @@
             "optional": true,
             "rank": 38,
             "value": "number"
+        },
+        "ABE": {
+            "caption": "markers",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "markers",
+            "rank": 52,
+            "value": "boolean"
         }
     },
     "icon": "ion-stats-bars",

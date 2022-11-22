@@ -20,6 +20,9 @@ function(instance, properties, context) {
         }
     }
 
+    
+    
+
     var options = {
         series: data,
         chart: { 
